@@ -78,8 +78,8 @@ release:
     - if: $CI_COMMIT_TAG =~ /^v.*$/
   script: |
     docker run --rm --privileged \
-      -v $PWD:/go/src/gitlab.com/hectorjsmith/grafana-matrix-forwarder \
-      -w /go/src/gitlab.com/hectorjsmith/grafana-matrix-forwarder \
+      -v $PWD:/go/src/gitlab.com/hctrdev/grafana-matrix-forwarder \
+      -w /go/src/gitlab.com/hctrdev/grafana-matrix-forwarder \
       -v /var/run/docker.sock:/var/run/docker.sock \
       -e DOCKER_USERNAME -e DOCKER_PASSWORD -e DOCKER_REGISTRY  \
       -e GITLAB_TOKEN \

@@ -24,7 +24,7 @@ services:
       - /docker/pantalaimon:/data
 
   forwarder:
-    image: registry.gitlab.com/hectorjsmith/grafana-matrix-forwarder:latest
+    image: registry.gitlab.com/hctrdev/grafana-matrix-forwarder:latest
     restart: unless-stopped
     environment:
     - GMF_MATRIX_USER=@user:matrix.org
