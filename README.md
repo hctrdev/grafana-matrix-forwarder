@@ -1,8 +1,8 @@
 # Grafana to Matrix Forwarder
 *Forward alerts from [Grafana](https://grafana.com) to a [Matrix](https://matrix.org) chat room.*
 
-[![documentation](https://img.shields.io/badge/docs-latest-orange)](https://hectorjsmith.gitlab.io/grafana-matrix-forwarder/)
- [![pipeline status](https://gitlab.com/hectorjsmith/grafana-matrix-forwarder/badges/main/pipeline.svg)](https://gitlab.com/hectorjsmith/grafana-matrix-forwarder/-/commits/main) [![Go Report Card](https://goreportcard.com/badge/gitlab.com/hectorjsmith/grafana-matrix-forwarder)](https://goreportcard.com/report/gitlab.com/hectorjsmith/grafana-matrix-forwarder)
+[![documentation](https://img.shields.io/badge/docs-latest-orange)](https://hctrdev.gitlab.io/grafana-matrix-forwarder/)
+ [![pipeline status](https://gitlab.com/hctrdev/grafana-matrix-forwarder/badges/main/pipeline.svg)](https://gitlab.com/hctrdev/grafana-matrix-forwarder/-/commits/main) [![Go Report Card](https://goreportcard.com/badge/gitlab.com/hctrdev/grafana-matrix-forwarder)](https://goreportcard.com/report/gitlab.com/hctrdev/grafana-matrix-forwarder)
 
 ---
 
@@ -25,7 +25,7 @@ This tool will convert the incoming webhook to a Matrix message and send it on t
     * Export metrics to track successful and failed forwards
 
 ## 2. How to use
-*This applies to unified alerts, check the [documentation](https://hectorjsmith.gitlab.io/grafana-matrix-forwarder/gettingStarted/grafana-legacy/) for legacy alerts*
+*This applies to unified alerts, check the [documentation](https://hctrdev.gitlab.io/grafana-matrix-forwarder/gettingStarted/grafana-legacy/) for legacy alerts*
 
 **Step 1**
 
@@ -60,7 +60,7 @@ An official docker image is available on the Gitlab container registry.
 Use it by pulling the following image:
 
 ```
-registry.gitlab.com/hectorjsmith/grafana-matrix-forwarder:latest
+registry.gitlab.com/hctrdev/grafana-matrix-forwarder:latest
 ```
 
 Example run command:
@@ -70,10 +70,10 @@ docker run -d \
     -e GMF_MATRIX_USER=@user:matrix.org \
     -e GMF_MATRIX_PASSWORD=password \
     -e GMF_MATRIX_HOMESERVER=matrix.org \
-    registry.gitlab.com/hectorjsmith/grafana-matrix-forwarder:latest
+    registry.gitlab.com/hctrdev/grafana-matrix-forwarder:latest
 ```
 
-Read the [documentation](https://hectorjsmith.gitlab.io/grafana-matrix-forwarder/) for more detail on using Docker.
+Read the [documentation](https://hctrdev.gitlab.io/grafana-matrix-forwarder/) for more detail on using Docker.
 
 ## Thanks
 
